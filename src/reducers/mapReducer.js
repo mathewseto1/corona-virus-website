@@ -1,16 +1,21 @@
-import {MAP_BOX_VIEWPORT} from '../Actions/types'
+import {SELECTED_NZ_DHB} from '../Actions/types'
 
 
 const intialState = {
-    mapBoxViewPort: {}
+    InitialObject: {SelectedNzDhbObject:{},loading:true, CoronaVirusCasesFetch:{}}
 }
 
-export default function(state = intialState, action){
+export default function(state = intialState.InitialObject, action){
     switch(action.type){
-        case MAP_BOX_VIEWPORT:
+        case SELECTED_NZ_DHB:
+        // console.log(action.payload.data)
+        //console.log(action.payload.NzDhbObject.DhbSelected[0])
         return{
-          state,
-          mapBoxViewPort: action.payload
+          ...state,
+          SelectedNzDhbObject: action.payload.NzDhbObject,
+          loading:action.payload.booleanReturned,
+          CoronaVirusCasesFetch:action.payload.data
+
         }
         default:
             return state;

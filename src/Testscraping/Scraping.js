@@ -24,12 +24,8 @@ async function scrapeProduct (){
     
     browser.close();
 
-console.log(object)
+//console.log(object)
+console.log(gg)
 }
 
 scrapeProduct()
-
-// scrapeProduct('https://www.amazon.com/AmazonBasics-Classic-Computer-Desk-Shelves/dp/B07PYT7NZ9/ref=sr_1_1?dchild=1&keywords=desk&qid=1586268445&sr=8-1')
-// scrapeProduct('https://www.health.govt.nz/our-work/diseases-and-conditions/covid-19-novel-coronavirus/covid-19-current-situation/covid-19-current-cases')
-
-// //the above is a function call to scrapeProduct function.

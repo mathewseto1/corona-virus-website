@@ -11,6 +11,7 @@ class DailyStatistics extends Component{
 
     }
     render(){
+        console.log(this.props.coronadata)
         const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
         const seperator = ' / '
         let newDate = new Date();
@@ -58,7 +59,7 @@ const mapStateToProps = state => ({
     coronadata: state.Areducer.items,
 })
 
-export default connect(mapStateToProps, {grabData,coronaVirusCountryData})(DailyStatistics)
+export default connect(mapStateToProps, {grabData})(DailyStatistics)
 
 //the 'connect' is bascially used to connect the component to the redux store.
 

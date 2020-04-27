@@ -13,18 +13,30 @@ export function grabData(){
     }
 }
 
-export function coronaVirusCountryData(){
-    return function(dispatch){
-        fetch('http://localhost:5001/corona-data-project/us-central1/helloWorld')
-        .then(res => res.json())
-        .then(data => dispatch({
-            type: COUNTRY_DATA,
-            payload: data
-            //this dispatches fetch post to the reducer.
-        }))
 
-    }
-}
+//this is not needed as the fetch is in the other mapdataaction     .
+// export function coronaVirusCountryData(){
+//     return function(){
+//         fetch('http://localhost:5001/corona-data-project/us-central1/helloWorld')
+//         .then(res => res.json())
+//         .then(data => {console.log(data)})
+
+//     }
+// }
+
+
+// export function coronaVirusCountryData(){
+//     return function(dispatch){
+//         fetch('http://localhost:5001/corona-data-project/us-central1/helloWorld')
+//         .then(res => res.json())
+//         .then(data => dispatch({
+//             type: COUNTRY_DATA,
+//             payload: data
+//             //this dispatches fetch post to the reducer.
+//         }))
+
+//     }
+// }
 
 // export function coronaVirusCountryData(){
 //     return function(dispatch){

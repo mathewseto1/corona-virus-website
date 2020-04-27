@@ -4,6 +4,7 @@ import {NavigationControl,Marker, Popup, Feature, SVGOverlay} from 'react-map-gl
 
 
 const MAPBOX_TOKEN = 'pk.eyJ1IjoibWF0aGV3MjMxIiwiYSI6ImNrOHlmNHhncjAzemUzZ2xodzlncmMyd3UifQ.xou-UcjaiM_05U0qD2aQkA';
+const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
 
 
 export class Map extends Component {
@@ -11,7 +12,7 @@ export class Map extends Component {
         super(props);
         this.state = {
             showPopup:true,
-            selectedPoint:null,
+            selectedPoint:false,
             viewport: {
             latitude: -41.838875,
             longitude: 171.7799,
@@ -22,24 +23,29 @@ export class Map extends Component {
 
           };
 
-          this.crap = this.crap.bind(this);
+        //   this.crap = this.crap.bind(this);
           this.pleaseHelp = this.pleaseHelp.bind(this);
-          this.pleaseHelp1 = this.pleaseHelp1.bind(this);
+          this.removedPoint = this.removedPoint.bind(this);
+        //   this.pleaseHelp1 = this.pleaseHelp1.bind(this);
         }
 
-        crap = (themouse) => {
-            console.log(themouse.lngLat === [174.7,-36.8])
+        // crap = (themouse) => {
+        //     console.log(themouse.lngLat === [174.7,-36.8])
+        // }
+
+        pleaseHelp = (e) =>{
+            console.log("hello")
+            this.setState({selectedPoint:true})
         }
 
-        pleaseHelp = () =>{
-            console.log("hello there")
-            // this.setState({showPopup:true})
+        removedPoint= (e) =>{
+            this.setState({selectedPoint:false})
         }
 
-        pleaseHelp1 =() =>{
-            console.log("if off it")
+        // pleaseHelp1 =() =>{
+        //     console.log("if off it")
             
-        }
+        // }
 
     render() {
 
@@ -97,8 +103,12 @@ export class Map extends Component {
         </div> */}
 
         <Marker longitude={174.7633} latitude={-36.8485}>
-        <div onMouseEnter = {(e) => console.log("bleh")}><img src="../svg/apple.svg"></img></div>
+        <button onMouseEnter = {(e) => this.pleaseHelp()}
+        onMouseLeave = {(e) => this.removedPoint()}>
+            <img src={SvgUrl} height ={18} width ={20}></img>
+        </button>
         </Marker>
+        {this.state.selectedPoint&&(<Popup longitude={174.7633} latitude={-36.8485}><div>Auckland</div></Popup>)}
 
         {/* {null && <Popup longitude={174.7633} latitude={-36.8485}><div>Auckland</div></Popup>} */}
 
