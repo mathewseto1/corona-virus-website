@@ -3,6 +3,7 @@ import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {grabData} from '../Actions/grabDataAction';
 import {coronaVirusCountryData} from '../Actions/grabDataAction';
+import styles from '../styles/CoronaData.module.css'
 
 class DailyStatistics extends Component{
     componentDidMount(){
@@ -20,27 +21,41 @@ class DailyStatistics extends Component{
         let year = newDate.getFullYear();
 
         const postItems = this.props.coronadata.map(post => (
+
+        <div>    
             <div>
-
                 <h2>Total CoronaVirus cases</h2>
-                <h3>{post.total_cases}</h3>
-                <h2>New Corona Viruses cases at {`${date}${seperator}${month<10?`0${month}`:`${month}`}${seperator}${year}`}</h2>
-                <h3>{post.total_new_cases_today}</h3>
-
-                {/* <div>
-
-                   <img styles ={{height: 53, width: 36}} src={SvgUrl} alt="Logo"/> The image will not resize!
-                </div> */}
-                
+                <span>{post.total_cases}</span>
             </div>
-            
-            ))
+
+            <div>
+                <h2>New Corona Viruses cases at {`${date}${seperator}${month<10?`0${month}`:`${month}`}${seperator}${year}`}</h2>
+                <span>{post.total_new_cases_today}</span>
+            </div>    
+
+            <div>    
+                <h2>Total Deaths</h2>
+                <span>{post.total_deaths}</span>
+            </div>
+
+            <div>    
+                <h2>Total Recovered</h2>
+                <span>{post.total_recovered}</span>
+            </div>    
+
+            <div>    
+                <h2>Active Coronavirus cases</h2>
+                <span>{post.total_active_cases}</span>
+            </div>
+
+        </div>    
+        ))
             // const postItems = this.props.testing.map(post =>(
             //     <div><h1>{post.Auckland.Number_of_Cases}</h1></div>
             // ))
 
         return(
-            <div>
+            <div className = {styles.Container}>
                 {postItems}
 
             </div>

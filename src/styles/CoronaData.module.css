@@ -1,0 +1,22 @@
+html, body, #app, #app>div {
+    height: 100%;
+    width:100%;
+  }
+.Container{
+    background-color: #121212;
+}
+.data{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+}
+h2{
+    color: white;
+}
+span{
+    color: white;
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
