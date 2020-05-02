@@ -5,6 +5,7 @@ import {grabData} from '../Actions/grabDataAction';
 import {coronaVirusCountryData} from '../Actions/grabDataAction';
 import styles from '../styles/CoronaData.module.css'
 
+
 class DailyStatistics extends Component{
     componentDidMount(){
         this.props.grabData()
@@ -12,7 +13,7 @@ class DailyStatistics extends Component{
 
     }
     render(){
-        console.log(this.props.coronadata)
+        // console.log(this.props.coronadata)
         const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
         const seperator = ' / '
         let newDate = new Date();
@@ -22,40 +23,46 @@ class DailyStatistics extends Component{
 
         const postItems = this.props.coronadata.map(post => (
 
-        <div>    
-            <div>
+        <div className ={styles.makegrid}>
+            <div className ={styles.block}>
                 <h2>Total CoronaVirus cases</h2>
                 <span>{post.total_cases}</span>
             </div>
 
-            <div>
+            <div className ={styles.block}>
                 <h2>New Corona Viruses cases at {`${date}${seperator}${month<10?`0${month}`:`${month}`}${seperator}${year}`}</h2>
                 <span>{post.total_new_cases_today}</span>
             </div>    
 
-            <div>    
+            <div className ={styles.block}>    
                 <h2>Total Deaths</h2>
                 <span>{post.total_deaths}</span>
             </div>
 
-            <div>    
+            <div className ={styles.block}>    
                 <h2>Total Recovered</h2>
                 <span>{post.total_recovered}</span>
             </div>    
 
-            <div>    
+            <div className ={styles.block}>    
                 <h2>Active Coronavirus cases</h2>
                 <span>{post.total_active_cases}</span>
             </div>
 
-        </div>    
+            <div className ={styles.block}>    
+                <h2>Deaths Today</h2>
+                <span>{post.total_new_deaths_today}</span>
+            </div>
+
+        </div>
+            
         ))
             // const postItems = this.props.testing.map(post =>(
             //     <div><h1>{post.Auckland.Number_of_Cases}</h1></div>
             // ))
 
         return(
-            <div className = {styles.Container}>
+            <div className = {styles.AContainer}>
                 {postItems}
 
             </div>

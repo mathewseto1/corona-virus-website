@@ -1,14 +1,22 @@
 import React, { Component } from 'react';
 import styles from '../styles/NavigationBar.module.css';
+import { Link } from 'react-router-dom';
 
 export class NavigationBar extends Component {
     render() {
         return (
-            <div>
+            <div className = {styles.Join}>
                 <ul className = {styles.Navbar}>
-                    <li className = {styles.item}>Home Page</li>
-                    <li className = {styles.item}>Covid-19 rules</li>
-                    <li className = {styles.item}>Covid-19 News</li>
+                    <Link to = '/Statistics'>
+                    <li className = {styles.item}>Covid-19 Statistics</li>
+                    </Link>
+                    
+                    <Link to = '/Map'>
+                    <li className = {styles.item}>Covid-19 Map</li>
+                    </Link>
+                    
+
+                    {/* <li className = {styles.item}>Covid-19 News</li> */}
                 </ul>
             </div>
         )
