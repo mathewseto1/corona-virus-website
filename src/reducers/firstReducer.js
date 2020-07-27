@@ -11,6 +11,7 @@ export default function(state = intialState, action){
     switch(action.type){
         case FETCH_DATA:
         return{
+        
           ...state,
           items: action.payload
         }

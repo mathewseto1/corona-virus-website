@@ -15,8 +15,6 @@ export class NavigationBar extends Component {
                     <li className = {styles.item}>Covid-19 Map</li>
                     </Link>
                     
-
-                    {/* <li className = {styles.item}>Covid-19 News</li> */}
                 </ul>
             </div>
         )

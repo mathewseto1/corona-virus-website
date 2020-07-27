@@ -13,7 +13,6 @@ class DailyStatistics extends Component{
 
     }
     render(){
-        // console.log(this.props.coronadata)
         const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
         const seperator = ' / '
         let newDate = new Date();
@@ -57,9 +56,6 @@ class DailyStatistics extends Component{
         </div>
             
         ))
-            // const postItems = this.props.testing.map(post =>(
-            //     <div><h1>{post.Auckland.Number_of_Cases}</h1></div>
-            // ))
 
         return(
             <div className = {styles.AContainer}>
