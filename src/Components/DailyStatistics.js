@@ -2,7 +2,7 @@ import React, {Component} from 'react';
 import PropTypes from 'prop-types';
 import {connect} from 'react-redux';
 import {grabData} from '../Actions/grabDataAction';
-import {coronaVirusCountryData} from '../Actions/grabDataAction';
+
 import styles from '../styles/CoronaData.module.css'
 
 
@@ -13,7 +13,7 @@ class DailyStatistics extends Component{
 
     }
     render(){
-        const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
+        //const SvgUrl = 'https://upload.wikimedia.org/wikipedia/commons/3/3e/Flag_of_New_Zealand.svg'
         const seperator = ' / '
         let newDate = new Date();
         let date = newDate.getDate();

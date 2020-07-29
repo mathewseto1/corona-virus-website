@@ -1,0 +1,427 @@
+[debug] [2020-07-29T04:39:05.898Z] ----------------------------------------------------------------------
+[debug] [2020-07-29T04:39:05.900Z] Command:       /usr/local/bin/node /usr/local/bin/firebase emulators:start
+[debug] [2020-07-29T04:39:05.900Z] CLI Version:   8.0.2
+[debug] [2020-07-29T04:39:05.900Z] Platform:      darwin
+[debug] [2020-07-29T04:39:05.901Z] Node Version:  v12.13.0
+[debug] [2020-07-29T04:39:05.901Z] Time:          Wed Jul 29 2020 16:39:05 GMT+1200 (New Zealand Standard Time)
+[debug] [2020-07-29T04:39:05.901Z] ----------------------------------------------------------------------
+[debug] [2020-07-29T04:39:05.902Z] 
+[debug] [2020-07-29T04:39:05.918Z] > command requires scopes: ["email","openid","https://www.googleapis.com/auth/cloudplatformprojects.readonly","https://www.googleapis.com/auth/firebase","https://www.googleapis.com/auth/cloud-platform"]
+[debug] [2020-07-29T04:39:05.919Z] > authorizing via signed-in user
+[info] i  emulators: Starting emulators: functions
+[debug] [2020-07-29T04:39:05.957Z] [hub] writing locator at /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/hub-corona-data-project.json
+[info] ✔  hub: emulator hub started at http://localhost:4400
+[warn] ⚠  Your requested "node" version "8" doesn't match your global version "12"
+[info] ✔  functions: functions emulator started at http://localhost:5001
+[info] i  functions: Watching "/Users/mathewseto/Desktop/corona-virus-website/functions" for Cloud Functions...
+[debug] [2020-07-29T04:39:06.015Z] [worker-pool] addWorker(~diagnostic~) 
+[debug] [2020-07-29T04:39:06.015Z] [worker-pool] Adding worker with key ~diagnostic~, total=1 
+[debug] [2020-07-29T04:39:06.016Z] [worker-pool] submitWork(triggerId=) 
+[debug] [2020-07-29T04:39:06.016Z] [worker-~diagnostic~-44a49b60-4357-4815-be18-3dc48d6204fe]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38849.sock 
+[debug] [2020-07-29T04:39:06.016Z] [worker-~diagnostic~-44a49b60-4357-4815-be18-3dc48d6204fe]: BUSY 
+[debug] [2020-07-29T04:39:06.244Z] [runtime-status] [38849] Functions runtime initialized. {"cwd":"/Users/mathewseto/Desktop/corona-virus-website/functions","node_version":"12.13.0"} 
+[debug] [2020-07-29T04:39:06.245Z] [runtime-status] [38849] Disabled runtime features: undefined 
+[debug] [2020-07-29T04:39:06.250Z] [runtime-status] [38849] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:39:06.252Z] [runtime-status] [38849] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:06.254Z] [runtime-status] [38849] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-07-29T04:39:06.315Z] [runtime-status] [38849] Checked functions.config() {"config":{}} 
+[debug] [2020-07-29T04:39:06.316Z] [runtime-status] [38849] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:06.316Z] [runtime-status] [38849] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:39:06.317Z] [runtime-status] [38849] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:06.317Z] [runtime-status] [38849] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"}} 
+[info] ✔  functions[helloWorld]: http function initialized (http://localhost:5001/corona-data-project/us-central1/helloWorld).
+[info] ✔  emulators: All emulators started, it is now safe to connect.
+[debug] [2020-07-29T04:39:06.463Z] [worker-~diagnostic~-44a49b60-4357-4815-be18-3dc48d6204fe]: IDLE 
+[debug] [2020-07-29T04:39:47.044Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:39:47.045Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:39:47.045Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:39:47.050Z] [worker-pool] addWorker(helloWorld) 
+[debug] [2020-07-29T04:39:47.050Z] [worker-pool] Adding worker with key helloWorld, total=1 
+[debug] [2020-07-29T04:39:47.050Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:39:47.051Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:39:47.051Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:39:47.824Z] [runtime-status] [38859] Functions runtime initialized. {"cwd":"/Users/mathewseto/Desktop/corona-virus-website/functions","node_version":"12.13.0"} 
+[debug] [2020-07-29T04:39:47.827Z] [runtime-status] [38859] Disabled runtime features: undefined 
+[debug] [2020-07-29T04:39:47.830Z] [runtime-status] [38859] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:39:47.832Z] [runtime-status] [38859] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:47.834Z] [runtime-status] [38859] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-07-29T04:39:47.916Z] [runtime-status] [38859] Checked functions.config() {"config":{}} 
+[debug] [2020-07-29T04:39:47.918Z] [runtime-status] [38859] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:47.920Z] [runtime-status] [38859] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:39:47.921Z] [runtime-status] [38859] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:39:47.922Z] [runtime-status] [38859] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-07-29T04:39:48.117Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:39:48.118Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:39:48.118Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:39:48.146Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:39:48.150Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:39:48.185Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:39:48.192Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:39:49.888Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:39:49.888Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:40:14.987Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:40:14.987Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:40:14.987Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:40:14.988Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:40:14.990Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:14.990Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:40:14.991Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:40:14.991Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:40:14.991Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:40:14.992Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:14.993Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:40:14.996Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:40:14.996Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:40:16.974Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:40:16.974Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:40:31.779Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:40:31.780Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:40:31.780Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:40:31.780Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:40:31.780Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:31.781Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:40:31.781Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:40:31.782Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:40:31.782Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:40:31.782Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:31.783Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:40:31.786Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:40:31.786Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:40:32.768Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:40:32.768Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:40:39.465Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:40:39.466Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:40:39.466Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:40:39.466Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:40:39.466Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:39.466Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:40:39.466Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:40:39.467Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:40:39.467Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:40:39.468Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:40:39.469Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:40:39.474Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:40:39.474Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:40:41.052Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:40:41.052Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:41:43.383Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:41:43.383Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:41:43.383Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:41:43.383Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:41:43.383Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:41:43.384Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:41:43.384Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:41:43.384Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:41:43.384Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:41:43.385Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:41:43.386Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:41:43.388Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:41:43.388Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~2s
+[debug] [2020-07-29T04:41:45.779Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:41:45.780Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:42:41.913Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:42:41.913Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:42:41.914Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:42:41.914Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:42:41.914Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:41.914Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:42:41.914Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:42:41.914Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:42:41.915Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:42:41.915Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:41.916Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:42:41.920Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:42:41.921Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~2s
+[debug] [2020-07-29T04:42:44.339Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:42:44.339Z] [work-queue] {"queueLength":0,"workRunningCount":0}
+[debug] [2020-07-29T04:42:45.146Z] [work-queue] {"queueLength":1,"workRunningCount":0}
+[debug] [2020-07-29T04:42:45.147Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:42:45.147Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:42:45.147Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:42:45.147Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:45.147Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:42:45.147Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:42:45.148Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:42:45.148Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:42:45.149Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:45.150Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:42:45.154Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:42:45.154Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[debug] [2020-07-29T04:42:46.186Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-07-29T04:42:46.186Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-07-29T04:42:46.186Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:42:46.196Z] [worker-pool] addWorker(helloWorld) 
+[debug] [2020-07-29T04:42:46.197Z] [worker-pool] Adding worker with key helloWorld, total=2 
+[debug] [2020-07-29T04:42:46.197Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:42:46.198Z] [worker-helloWorld-6aa74f0c-a909-48b6-94e7-4329aadb85e5]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38933.sock 
+[debug] [2020-07-29T04:42:46.198Z] [worker-helloWorld-6aa74f0c-a909-48b6-94e7-4329aadb85e5]: BUSY 
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:42:46.199Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:42:46.199Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[debug] [2020-07-29T04:42:46.575Z] [runtime-status] [38933] Functions runtime initialized. {"cwd":"/Users/mathewseto/Desktop/corona-virus-website/functions","node_version":"12.13.0"} 
+[debug] [2020-07-29T04:42:46.576Z] [runtime-status] [38933] Disabled runtime features: undefined 
+[debug] [2020-07-29T04:42:46.578Z] [runtime-status] [38933] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:42:46.580Z] [runtime-status] [38933] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:42:46.581Z] [runtime-status] [38933] Outgoing network have been stubbed. [{"name":"http","status":"mocked"},{"name":"http","status":"mocked"},{"name":"https","status":"mocked"},{"name":"https","status":"mocked"},{"name":"net","status":"mocked"}] 
+[debug] [2020-07-29T04:42:46.621Z] [runtime-status] [38933] Checked functions.config() {"config":{}} 
+[debug] [2020-07-29T04:42:46.622Z] [runtime-status] [38933] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:42:46.623Z] [runtime-status] [38933] Resolved module firebase-admin {"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"} 
+[debug] [2020-07-29T04:42:46.623Z] [runtime-status] [38933] Resolved module firebase-functions {"declared":true,"installed":true,"version":"3.6.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-functions/lib/index.js"} 
+[debug] [2020-07-29T04:42:46.623Z] [runtime-status] [38933] firebase-admin has been stubbed. {"adminResolution":{"declared":true,"installed":true,"version":"8.10.0","resolution":"/Users/mathewseto/Desktop/corona-virus-website/functions/node_modules/firebase-admin/lib/index.js"}} 
+[debug] [2020-07-29T04:42:46.723Z] [runtime-status] [38933] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:42:46.724Z] [runtime-status] [38933] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:42:46.724Z] [runtime-status] [38933] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:42:46.728Z] [runtime-status] [38933] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38933.sock 
+[debug] [2020-07-29T04:42:46.730Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:42:46.738Z] [runtime-status] [38933] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:42:46.741Z] [runtime-status] [38933] Ephemeral server survived. 
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[debug] [2020-07-29T04:42:47.886Z] [work-queue] {"queueLength":1,"workRunningCount":1}
+[debug] [2020-07-29T04:42:47.886Z] [work-queue] {"queueLength":0,"workRunningCount":2}
+[debug] [2020-07-29T04:42:47.886Z] Accepted request GET /corona-data-project/us-central1/helloWorld --> helloWorld
+[debug] [2020-07-29T04:42:47.886Z] [worker-pool] submitWork(triggerId=helloWorld) 
+[debug] [2020-07-29T04:42:47.886Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: Assigning socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:47.887Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: BUSY 
+[debug] [2020-07-29T04:42:47.887Z] [runtime-status] [38859] Trigger "helloWorld" has been found, beginning invocation! 
+[info] i  functions: Beginning execution of "helloWorld"
+[debug] [2020-07-29T04:42:47.887Z] [runtime-status] [38859] triggerDefinition {"httpsTrigger":{},"name":"helloWorld","entryPoint":"helloWorld"} 
+[debug] [2020-07-29T04:42:47.888Z] [runtime-status] [38859] Running helloWorld in mode HTTPS 
+[debug] [2020-07-29T04:42:47.888Z] [runtime-status] [38859] Attempting to listen to socketPath: /var/folders/dh/xvy1pnbn5fjc363jsyvzk8p40000gn/T/fire_emu_38859.sock 
+[debug] [2020-07-29T04:42:47.889Z] [functions] Runtime ready! Sending request! 
+[debug] [2020-07-29T04:42:47.892Z] [runtime-status] [38859] Ephemeral server handling GET request 
+[debug] [2020-07-29T04:42:47.892Z] [runtime-status] [38859] Ephemeral server survived. 
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:42:47.893Z] [worker-helloWorld-6aa74f0c-a909-48b6-94e7-4329aadb85e5]: IDLE 
+[debug] [2020-07-29T04:42:47.894Z] [work-queue] {"queueLength":0,"workRunningCount":1}
+[info] >  [ {"user":"["}
+[info] >    'Auckland\t0\t176\t0\t176\t0', {"user":"  'Auckland\\t0\\t176\\t0\\t176\\t0',"}
+[info] >    'Bay of Plenty\t0\t47\t0\t47\t0', {"user":"  'Bay of Plenty\\t0\\t47\\t0\\t47\\t0',"}
+[info] >    'Canterbury\t0\t152\t12\t164\t0', {"user":"  'Canterbury\\t0\\t152\\t12\\t164\\t0',"}
+[info] >    'Capital and Coast\t0\t93\t2\t95\t0', {"user":"  'Capital and Coast\\t0\\t93\\t2\\t95\\t0',"}
+[info] >    'Counties Manukau\t0\t132\t0\t132\t0', {"user":"  'Counties Manukau\\t0\\t132\\t0\\t132\\t0',"}
+[info] >    "Hawke's Bay\t0\t44\t0\t44\t0", {"user":"  \"Hawke's Bay\\t0\\t44\\t0\\t44\\t0\","}
+[info] >    'Hutt Valley\t0\t22\t0\t22\t0', {"user":"  'Hutt Valley\\t0\\t22\\t0\\t22\\t0',"}
+[info] >    'Lakes\t0\t16\t0\t16\t0', {"user":"  'Lakes\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Mid Central\t0\t32\t0\t32\t0', {"user":"  'Mid Central\\t0\\t32\\t0\\t32\\t0',"}
+[info] >    'Nelson Marlborough\t0\t49\t0\t49\t0', {"user":"  'Nelson Marlborough\\t0\\t49\\t0\\t49\\t0',"}
+[info] >    'Northland\t0\t28\t0\t28\t0', {"user":"  'Northland\\t0\\t28\\t0\\t28\\t0',"}
+[info] >    'South Canterbury\t0\t17\t0\t17\t0', {"user":"  'South Canterbury\\t0\\t17\\t0\\t17\\t0',"}
+[info] >    'Southern\t0\t214\t2\t216\t0', {"user":"  'Southern\\t0\\t214\\t2\\t216\\t0',"}
+[info] >    'Tairāwhiti\t0\t4\t0\t4\t0', {"user":"  'Tairāwhiti\\t0\\t4\\t0\\t4\\t0',"}
+[info] >    'Taranaki\t0\t16\t0\t16\t0', {"user":"  'Taranaki\\t0\\t16\\t0\\t16\\t0',"}
+[info] >    'Waikato\t0\t187\t1\t188\t0', {"user":"  'Waikato\\t0\\t187\\t1\\t188\\t0',"}
+[info] >    'Wairarapa\t0\t8\t0\t8\t0', {"user":"  'Wairarapa\\t0\\t8\\t0\\t8\\t0',"}
+[info] >    'Waitematā\t0\t234\t4\t238\t0', {"user":"  'Waitematā\\t0\\t234\\t4\\t238\\t0',"}
+[info] >    'West Coast\t0\t4\t1\t5\t0', {"user":"  'West Coast\\t0\\t4\\t1\\t5\\t0',"}
+[info] >    'Whanganui\t0\t9\t0\t9\t0', {"user":"  'Whanganui\\t0\\t9\\t0\\t9\\t0',"}
+[info] >    'Managed Isolation & Quarantine\t23\t30\t0\t53\t2', {"user":"  'Managed Isolation & Quarantine\\t23\\t30\\t0\\t53\\t2',"}
+[info] >    'Total\t23\t1514\t22\t1559\t2' {"user":"  'Total\\t23\\t1514\\t22\\t1559\\t2'"}
+[info] >  ] {"user":"]"}
+[info] i  functions: Finished "helloWorld" in ~1s
+[debug] [2020-07-29T04:42:48.863Z] [worker-helloWorld-67460cf8-e46b-4ea9-b865-4f0ef881fe0d]: IDLE 
+[debug] [2020-07-29T04:42:48.863Z] [work-queue] {"queueLength":0,"workRunningCount":0}

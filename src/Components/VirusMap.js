@@ -1,7 +1,7 @@
 import React from 'react';
 import {Component} from 'react';
 import {connect} from 'react-redux';
-import {coronaVirusCountryData} from '../Actions/grabDataAction';
+
 import {DhbRegionSelected} from '../Actions/mapDataAction'
 import ReactMapGL from 'react-map-gl';
 import {Marker, Popup} from 'react-map-gl';
@@ -64,7 +64,7 @@ export class VirusMap extends Component{
         
         const { mounted } = this.state
 
-        var DhbRegionObject = {"DhbSelected":[]}
+        //var DhbRegionObject = {"DhbSelected":[]}
 
 
 
@@ -83,7 +83,7 @@ export class VirusMap extends Component{
 
             <button onMouseEnter = {(e) => this.mouseSelected(this.props.NzDhbRegion,index,Object.keys(item)[0])}
             onMouseLeave ={(e)=>this.mouseUnselected(this.props.NzDhbRegion,index,Object.keys(item)[0])}>
-                <img src={SvgUrl} height ={18} width ={20}></img>
+                <img alt = "" src={SvgUrl} height ={18} width ={20}></img>
             </button>
             </Marker>
 

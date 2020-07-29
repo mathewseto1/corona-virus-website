@@ -1,4 +1,4 @@
-import {FETCH_DATA,COUNTRY_DATA} from './types'
+import {FETCH_DATA} from './types'
 
 export function grabData(){
     return function(dispatch){
